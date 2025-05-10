@@ -1,0 +1,36 @@
+﻿@page
+@model SupermarketWEB.Pages.PayMode.IndexModel
+@{
+	ViewData["Title"] = "Index PayModes";
+}
+<h1>Index Paymode</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Paymode[0].Method)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paymode[0].Description)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Paymode)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Method)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    <span></span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

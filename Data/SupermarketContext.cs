@@ -10,7 +10,7 @@ public class SupermarketContext : DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; } 
     public DbSet<Providers> Provider { get; set; }
-    public DbSet<PayMode> PayModes { get; set; }
+    public DbSet<Paymodes> Paymode { get; set; }
 
    
 
