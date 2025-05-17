@@ -4,9 +4,11 @@ using SupermarketWEB.Data;
 using SupermarketWEB.Models;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SupermarketWEB.Pages.Customers
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly SupermarketContext _context;
