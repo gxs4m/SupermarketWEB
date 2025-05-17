@@ -11,8 +11,9 @@ public class SupermarketContext : DbContext
     public DbSet<Category> Categories { get; set; } 
     public DbSet<Customer> Customers { get; set; }
     public DbSet<Paymodes> Paymode { get; set; }
+    public DbSet<User> Users { get; set; }
 
-   
+
 
 
 }

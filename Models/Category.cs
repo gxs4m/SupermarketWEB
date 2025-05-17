@@ -10,3 +10,5 @@ namespace SupermarketWEB.Models
         public ICollection<Product>? Products { get; set; } = default!; // Propiedad de navegación
     }
 }
+
+
